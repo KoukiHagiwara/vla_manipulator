@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot name="so101_new_calib">
 
+<link name="world"/>
+  <joint name="world_to_base" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0.5" rpy="0 0 0"/>
+  </joint>
+
   <material name="3d_printed">
     <color rgba="1.0 0.82 0.12 1.0"/>
   </material>
@@ -415,4 +422,6 @@
     </actuator>
   </transmission> 
 
+  
+  
 </robot>
